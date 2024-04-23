@@ -2,8 +2,8 @@
   "name": "karabiner",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Max Stoiber <contact@mxstbr.com>",
   "license": "MIT",
+  "author": "Max Stoiber <contact@mxstbr.com>",
   "devDependencies": {
     "@types/node": "^18.7.19",
     "nodemon": "^2.0.20",
@@ -12,6 +12,10 @@
   },
   "scripts": {
     "build": "tsm rules.ts",
-    "watch": "nodemon --exec yarn build -e ts"
+    "watch": "nodemon --exec yarn build -e ts",
+    "deploy": "npm run build && cp karabiner.json ~/.config/karabiner/karabiner.json && launchctl kickstart -k gui/`id -u`/org.pqrs.karabiner.karabiner_console_user_server"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
   }
 }

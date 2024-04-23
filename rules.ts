@@ -38,65 +38,66 @@ const rules: KarabinerRules[] = [
         ],
         type: "basic",
       },
-      //      {
-      //        type: "basic",
-      //        description: "Disable CMD + Tab to force Hyper Key usage",
-      //        from: {
-      //          key_code: "tab",
-      //          modifiers: {
-      //            mandatory: ["left_command"],
-      //          },
-      //        },
-      //        to: [
-      //          {
-      //            key_code: "tab",
-      //          },
-      //        ],
-      //      },
+      // {
+      //   type: "basic",
+      //   description: "Disable CMD + Tab to force Hyper Key usage",
+      //   from: {
+      //     key_code: "tab",
+      //     modifiers: {
+      //       mandatory: ["left_command"],
+      //     },
+      //   },
+      //   to: [
+      //     {
+      //       key_code: "tab",
+      //     },
+      //   ],
+      // },
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
+    // spacebar: open(
+    //   "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
+    // ),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
-      y: open("https://news.ycombinator.com"),
       f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
+      g: open("https://mail.google.com/mail/u/0/#inbox"),
+      n: open("https://notes.northcoders.com/courses"),
+      o: open("https://outlook.live.com/mail/0/"),
+      t: open("https://twitter.com"),
+      r: open("https://read.readwise.io/new"),
+      y: open("https://news.ycombinator.com"),
     },
     // o = "Open" applications
     o: {
-      1: app("1Password"),
+      // 1: app("1Password"),
       g: app("Google Chrome"),
-      c: app("Notion Calendar"),
+      c: app("Fantastical"),
       v: app("Visual Studio Code"),
       d: app("Discord"),
       s: app("Slack"),
-      e: app("Superhuman"),
+      // e: app("Superhuman"),
       n: app("Notion"),
-      t: app("Warp"),
+      t: app("Todoist"),
+      f: app("Firefox"),
       // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
+      // h: open(
+      //   "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
+      // ),
       z: app("zoom.us"),
       // "M"essages
-      m: app("Texts"),
-      f: app("Finder"),
-      r: app("Texts"),
+      // m: app("Texts"),
+      // r: app("Texts"),
       // "i"Message
-      i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
+      i: app("Timery"),
+      // p: app("Spotify"),
+      // a: app("iA Presenter"),
       // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      w: open("Whatsapp"),
+      // l: open(
+      //   "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+      // ),
     },
 
     // w = "Window" via rectangle.app
