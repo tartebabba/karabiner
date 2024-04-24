@@ -33,7 +33,7 @@ const rules: KarabinerRules[] = [
         ],
         to_if_alone: [
           {
-            key_code: "escape",
+            key_code: "caps_lock",
           },
         ],
         type: "basic",
@@ -80,7 +80,8 @@ const rules: KarabinerRules[] = [
       // e: app("Superhuman"),
       i: app("Timery"),
       l: app("Obsidian"),
-      n: app("Notion"),
+      n: app("Obsidian"),
+      r: app("Reader"),
       s: app("Slack"),
       t: app("Todoist"),
       v: app("Visual Studio Code"),
@@ -92,7 +93,7 @@ const rules: KarabinerRules[] = [
       // m: app("Texts"),
       // r: app("Texts"),
       // "i"Message
-      // p: app("Spotify"),
+      p: app("Spotify"),
       // "W"hatsApp has been replaced by Texts
       w: open("Whatsapp"),
       z: app("zoom.us"),
@@ -258,50 +259,50 @@ const rules: KarabinerRules[] = [
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
     // so that hjkl work like they do in vim
-    v: {
-      h: {
-        to: [{ key_code: "left_arrow" }],
-      },
-      j: {
-        to: [{ key_code: "down_arrow" }],
-      },
-      k: {
-        to: [{ key_code: "up_arrow" }],
-      },
-      l: {
-        to: [{ key_code: "right_arrow" }],
-      },
-      // Magicmove via homerow.app
-      m: {
-        to: [{ key_code: "f", modifiers: ["right_control"] }],
-      },
-      // Scroll mode via homerow.app
-      s: {
-        to: [{ key_code: "j", modifiers: ["right_control"] }],
-      },
-      d: {
-        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
-      },
-      u: {
-        to: [{ key_code: "page_down" }],
-      },
-      i: {
-        to: [{ key_code: "page_up" }],
-      },
-    },
+    // v: {
+    //   h: {
+    //     to: [{ key_code: "left_arrow" }],
+    //   },
+    //   j: {
+    //     to: [{ key_code: "down_arrow" }],
+    //   },
+    //   k: {
+    //     to: [{ key_code: "up_arrow" }],
+    //   },
+    //   l: {
+    //     to: [{ key_code: "right_arrow" }],
+    //   },
+    //   // Magicmove via homerow.app
+    //   m: {
+    //     to: [{ key_code: "f", modifiers: ["right_control"] }],
+    //   },
+    //   // Scroll mode via homerow.app
+    //   s: {
+    //     to: [{ key_code: "j", modifiers: ["right_control"] }],
+    //   },
+    //   d: {
+    //     to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
+    //   },
+    //   u: {
+    //     to: [{ key_code: "page_down" }],
+    //   },
+    //   i: {
+    //     to: [{ key_code: "page_up" }],
+    //   },
+    // },
 
     // c = Musi*c* which isn't "m" because we want it to be on the left hand
-    c: {
-      p: {
-        to: [{ key_code: "play_or_pause" }],
-      },
-      n: {
-        to: [{ key_code: "fastforward" }],
-      },
-      b: {
-        to: [{ key_code: "rewind" }],
-      },
-    },
+    // c: {
+    //   p: {
+    //     to: [{ key_code: "play_or_pause" }],
+    //   },
+    //   n: {
+    //     to: [{ key_code: "fastforward" }],
+    //   },
+    //   b: {
+    //     to: [{ key_code: "rewind" }],
+    //   },
+    // },
 
     // r = "Raycast"
     r: {
