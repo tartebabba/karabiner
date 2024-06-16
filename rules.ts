@@ -33,7 +33,7 @@ const rules: KarabinerRules[] = [
         ],
         to_if_alone: [
           {
-            key_code: "caps_lock",
+            key_code: "escape",
           },
         ],
         type: "basic",
@@ -73,6 +73,7 @@ const rules: KarabinerRules[] = [
     o: {
       // 1: app("1Password"),
       a: app("Anki"),
+      b: app("Arc"),
       c: app("Fantastical"),
       d: app("Discord"),
       f: app("Firefox"),
