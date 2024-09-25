@@ -22,6 +22,11 @@ const rules: KarabinerRules[] = [
               value: 1,
             },
           },
+          // Used to allow HyperKey to activate Shortcat
+          {
+            key_code: "left_shift",
+            modifiers: ["left_command", "left_control", "left_option"],
+          },
         ],
         to_after_key_up: [
           {
