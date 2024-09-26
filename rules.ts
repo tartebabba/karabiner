@@ -36,6 +36,7 @@ const rules: KarabinerRules[] = [
             },
           },
         ],
+        // Prevent pinky reaching for the ESC key
         to_if_alone: [
           {
             key_code: "escape",
