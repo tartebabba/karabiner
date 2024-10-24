@@ -67,46 +67,39 @@ const rules: KarabinerRules[] = [
     // ),
     // b = "B"rowse
     b: {
-      f: open("https://facebook.com"),
+      c: open("https://calendar.google.com/calendar/u/0/r"),
       g: open("https://mail.google.com/mail/u/0/#inbox"),
-      n: open("https://notes.northcoders.com/courses"),
+      h: open("https://github.com/tartebabba"),
       o: open("https://outlook.live.com/mail/0/"),
-      t: open("https://twitter.com"),
+      t: open("https://app.todoist.com/app/upcoming"),
       r: open("https://read.readwise.io/new"),
-      y: open("https://news.ycombinator.com"),
+      y: open("https://youtube.com"),
     },
     // o = "Open" applications
     o: {
-      // 1: app("1Password"),
+      1: app("1Password"),
       a: app("Anki"),
       b: app("Arc"),
-      c: app("Fantastical"),
+      c: app("Calendar"),
       d: app("Discord"),
       f: app("Firefox"),
       g: app("Google Chrome"),
-      // e: app("Superhuman"),
-      i: app("Timery"),
+      i: app("iTerm"),
       l: app("Obsidian"),
       n: app("Obsidian"),
-      r: app("Reader"),
+      p: app("Spotify"),
+      r: app("Reminders"),
       s: app("Slack"),
       t: app("Todoist"),
       v: app("Visual Studio Code"),
-      // Open todo list managed via *H*ypersonic
       // h: open(
       //   "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
       // ),
       // "M"essages
-      // m: app("Texts"),
-      // r: app("Texts"),
-      // "i"Message
-      p: app("Spotify"),
+      m: app("Texts"),
       // "W"hatsApp has been replaced by Texts
       w: open("Whatsapp"),
       z: app("zoom.us"),
-      // l: open(
-      //   "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      // ),
     },
 
     // w = "Window" via rectangle.app
